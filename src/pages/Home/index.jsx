@@ -1,20 +1,15 @@
-import React from 'react'
-import styles from './home.module.css'
-import { Button, Inputs, Modal, ToolTip } from '@/components'
-import { Header, Footer, Navbar } from '@/layout'
+import React from 'react';
+// import { Button, Inputs, Modal, ToolTip } from '@/components'
+// import { Header, Footer, Navbar } from '@/layout'
 
-const index = () => {
+const Home = () => {
   return (
-    <div className={styles.root}>
-      <Header />
+    <div>
+      {/* <Header /> */}
       Home Pag
-      <br/>
-      {/* <Button/>
-      <Inputs/>
-      <Modal/>
-      <ToolTip/> */}
+      {/* <Button type="primary">Submit</Button> */}
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default Home;
