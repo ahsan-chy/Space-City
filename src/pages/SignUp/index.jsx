@@ -1,7 +1,6 @@
 import React from 'react'
-import styles from './signUp.module.css'
 
-const index = () => {
+const SignUp = (props) => {
   return (
     <div>
         Signup
@@ -9,4 +8,4 @@ const index = () => {
   )
 }
 
-export default index
+export default SignUp

@@ -1,12 +1,8 @@
-import React from 'react'
-import styles from './inputs.module.css'
+import React from 'react';
+import { Input } from 'antd';
 
-const index = () => {
-  return (
-    <div>
-      <input type='text' placeholder='Enter Your name'/>
-    </div>
-  )
+function TextInput(props) {
+  return <Input {...props} />;
 }
 
-export default index
+export default TextInput;

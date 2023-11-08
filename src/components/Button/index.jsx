@@ -1,12 +1,10 @@
-import React from 'react'
-import styles from './button.module.css'
+import React from 'react';
 
-const index = () => {
-  return (
-    <button>
-      Button
-    </button>
-  )
+import { Button as AntdButton } from 'antd';
+
+function Button(props) {
+  const { children } = props;
+  return <AntdButton {...props}>{children}</AntdButton>;
 }
 
-export default index
+export default Button;
