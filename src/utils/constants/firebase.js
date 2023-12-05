@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 
 //+ Initialize Firebase App
 const firebaseConfig = {
-  apiKey: 'AIzaSyBa6TsstqPR2CwyZGAYOBrCh5oqSMOXVhU',
-  authDomain: 'space-city-next.firebaseapp.com',
-  projectId: 'space-city-next',
-  storageBucket: 'space-city-next.appspot.com',
-  messagingSenderId: '166787209034',
-  appId: '1:166787209034:web:592f3390eb759a099153b3',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
